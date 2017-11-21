@@ -15,6 +15,9 @@ module.exports = function(grunt) {
       },
       android: {
         PLATFORM: 'ANDROID'
+      },
+      electron: {
+        PLATFORM: 'ELECTRON'
       }
     },
 
@@ -29,7 +32,7 @@ module.exports = function(grunt) {
 
     exec: {
       run_cucumber_tests: {
-        command: path.join('node_modules', 'cucumber',  'bin', 'cucumber.js')
+        command: path.join('node_modules', '',  '.bin', 'cucumber-electron')
       }
     }
 
@@ -43,5 +46,5 @@ module.exports = function(grunt) {
   grunt.registerTask('chrome', ['env:chrome', 'jshint', 'exec']);
   grunt.registerTask('firefox', ['env:firefox', 'jshint', 'exec']);
   grunt.registerTask('android', ['env:android', 'jshint', 'exec']);
-
+  grunt.registerTask('electron', ['env:electron', 'jshint', 'exec']);
 };
