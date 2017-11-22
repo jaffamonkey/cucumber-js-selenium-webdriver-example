@@ -15,9 +15,6 @@ module.exports = function(grunt) {
       },
       android: {
         PLATFORM: 'ANDROID'
-      },
-      electron: {
-        PLATFORM: 'ELECTRON'
       }
     },
 
@@ -46,5 +43,4 @@ module.exports = function(grunt) {
   grunt.registerTask('chrome', ['env:chrome', 'jshint', 'exec']);
   grunt.registerTask('firefox', ['env:firefox', 'jshint', 'exec']);
   grunt.registerTask('android', ['env:android', 'jshint', 'exec']);
-  grunt.registerTask('electron', ['env:electron', 'jshint', 'exec']);
 };
