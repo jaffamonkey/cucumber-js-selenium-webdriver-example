@@ -68,7 +68,7 @@ This will install Appium, but you'll need to start the server (it's probably bes
     cd node_modules/appium/
     node . 
 
-Once that has started successfully, then try running the test:
+Once that has started successfully,then try running the test:
 
     [me@computer cucumber-js-selenium-webdriver-example]$ grunt android
     Running "jshint:files" (jshint) task
